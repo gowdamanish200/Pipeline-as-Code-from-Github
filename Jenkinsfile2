@@ -14,12 +14,14 @@ pipeline {
             }
         }
 
-        stage("Run a Multiple Command") {
+        stage("Run Multiple Commands") {
             steps {
-                sh '''pwd
-                ls
-                date 
-                cal'''
+                sh '''
+                    pwd
+                    ls
+                    date
+                    cal
+                '''
             }
         }
     }
